@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1462525805642684}
+  m_IsPrefabParent: 1
+--- !u!1 &1462525805642684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4580606896827580}
+  - component: {fileID: 114643328622753930}
+  - component: {fileID: 114344159528827964}
+  - component: {fileID: 114823602574522774}
+  m_Layer: 0
+  m_Name: Maze
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4580606896827580
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462525805642684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114344159528827964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462525805642684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e8d4896901b394fb6f6775a26a92a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availablePassages:
+  - {fileID: 114885139155099946, guid: 763cf9f2106a29a4693eaf90f87f7e65, type: 2}
+  - {fileID: 114625500330380842, guid: dbc574c893927a64cbedcdb72f689254, type: 2}
+  passagesChance: 0a00000064000000
+--- !u!114 &114643328622753930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462525805642684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 862a04638d0861f4f91e86f1e2c423d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size:
+    x: 20
+    z: 20
+  cellPrefab: {fileID: 114987019914008190, guid: 60417a2293dbb394ab6ae0beb7c8a46f,
+    type: 2}
+  wallPrefab: {fileID: 114367952624525368, guid: 1e0401e40a7ed574bb53a507aea70001,
+    type: 2}
+--- !u!114 &114823602574522774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462525805642684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a693ce63150174e4cae7197cfdc5971e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+  - floorMaterial: {fileID: 2100000, guid: f99801135d9c17747aa0b3c7ef518830, type: 2}
+    wallMaterial: {fileID: 2100000, guid: 09eeff35ffde52a43967a3a8e7a58afc, type: 2}
+  - floorMaterial: {fileID: 2100000, guid: ffa6496c27a70e2458a75a13a8b79e14, type: 2}
+    wallMaterial: {fileID: 2100000, guid: 88cb8c1a843171e41a13adaa35e85436, type: 2}
+  - floorMaterial: {fileID: 2100000, guid: 350271ae8ab8aa24eb7de6c7871db54f, type: 2}
+    wallMaterial: {fileID: 2100000, guid: 008ceffb0046d8c4199ba015d2d01f77, type: 2}
+  - floorMaterial: {fileID: 2100000, guid: 350271ae8ab8aa24eb7de6c7871db54f, type: 2}
+    wallMaterial: {fileID: 2100000, guid: ffa6496c27a70e2458a75a13a8b79e14, type: 2}
